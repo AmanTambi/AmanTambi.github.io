@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Sandeep S Zachariah"
+title                    : "Aman Tambi"
 title_separator          : "-"
-name                     : &name "Sandeep S Zachariah"
+name                     : &name "Aman Tambi"
 description              : &description "personal description"
-url                      : https://sandeepzachariah.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://AmanTambi.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "sandeepzachariah/sandeepzachariah.github.io"
+repository               : "AmanTambi/AmanTambi.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Sandeep S Zachariah"
+  name             : "Aman Tambi"
   avatar           : "profile_pic3.jpg"
   bio              : "MS in Robotics student @ Carnegie Mellon University"
   location         : "Pittsburgh, USA"
