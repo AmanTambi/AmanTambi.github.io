@@ -12,22 +12,22 @@ redirect_from:
 
 Education
 ======
-* **Bachelor of Technology (BTech)** : 2018 - 2022 \
-    *Electronics and Communication Engineering* \
-    National Institute of Technology Calicut ([NITC](https://nitc.ac.in/)) \
-    CGPA: 9.75/10
+* **Bachelor of Technology (BTech)** : 2018 - 2023 \
+    *Manufacturing Engineering* \
+    Birla Institute of Technology and Science ([BITS Pilani](https://www.bits-pilani.ac.in/pilani/)) \
+    CGPA: 8.69/10
 * **High School** : 2016 - 2018 \
-    *Indian School Certificate (ISC)* \
-    St. Thomas Residential School ([STRS](https://strstvm.org/))  
-    Grade: 98%
+    *Central Board of Secondary Education (CBSE)* \
+    Delhi Public School, Gurgaon ([DPSG](https://www.dpsgurgaon.org/))  
+    Grade: 94.5%
 
 ---
 
 Work experience
 ======
-* **Project Scientist**: July 2022 - July 2024 \
+* **Project Scientist**: July 2023 - Present \
    *Indian Institute of Technology Delhi ([IITD](https://home.iitd.ac.in/))* \
-   Development of a Cognitive model for an Intelligent Robotic Teammate.
+   Development of a Cognitive model for an Intelligent Robotic elderly assistant.
 * **Project Intern** : April 2021 - September 2021 \
   *Indian Institute of Space Science and Technology ([IIST](https://www.iist.ac.in/))* \
   Modelling, Control and Simulation of Quadruped robots.
