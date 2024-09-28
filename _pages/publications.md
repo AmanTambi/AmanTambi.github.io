@@ -6,7 +6,7 @@ author_profile: true
 ---
 **Generating Open-World & Multi-Hierarchy Scene Graphs for Human-instructed Manipulation 
 Tasks via Foundation Models** \
-<ins>Sandeep S. Zachariah</ins>, Aman Tambi, Moksh Malhotra, P. V. M. Rao and Rohan Paul \
+<ins>Aman Tambi</ins>, Sandeep S. Zachariah, Moksh Malhotra, P. V. M. Rao and Rohan Paul \
 ICRA 2024: 2nd Workshop on Mobile Manipulation and Embodied Intelligence \
 [Paper](https://openreview.net/pdf?id=IqRpVnq6mC), [Website](https://reail-iitdelhi.github.io/scenegraph.github.io/)
 
