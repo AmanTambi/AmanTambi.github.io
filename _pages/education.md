@@ -12,7 +12,7 @@ redirect_from:
 
 Education
 ======
-* **Airforce Cadet** : December 2018 - July 2019
+* **Airforce Cadet** : December 2018 - July 2019 \
     *Electronics and Communicaion* \
     National Defence Academy ([NDA](https://nda.nic.in/))
 * **Bachelor of Technology (BTech)** : 2019 - 2023 \
@@ -54,6 +54,6 @@ Skills
 * **Robot System Experience**: Clearpath Husky, UR5e manipulator, Franka Emika Panda Manipulator, Robotiq 3f-gripper, Robotiq 2f-140
 gripper, Soft Gripper, ForceTorque Sensor, Intel Realsense and Zed cameras.
 * **Programming Languages**: Python, Matlab, C++, 
-* **Softwares/Frameworks**: OpenCV, SciLab, ROS, Fusion 360, LaTex, Microsoft Office. 
+* **Softwares/Frameworks**: OpenCV, SciLab, ROS, Fusion 360, LaTex, CoppeliaSim, Microsoft Office. 
 * **System skills**: Linux, server and GPU cluster management, Networking. 
 

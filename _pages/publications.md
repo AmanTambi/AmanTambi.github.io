@@ -7,7 +7,7 @@ author_profile: true
 
 **G2TR: Generalized Grounded Temporal Reasoning for Robot Instruction Following by Combining Large Pre-trained Models** \
 Riya Arora, Niveditha Narendranath, <ins>Aman Tambi</ins>, Sandeep S. Zachariah, Souvik Chakraborty and Rohan Paul\
-International Conference on Robotics and Automation (ICRA)2025. \
+International Conference on Robotics and Automation (ICRA) 2025. \
 [Paper](https://drive.google.com/file/d/1PALesNMvRbRzDbPYBFwCG0WO9B5IH_pp/view?usp=drive_link), [Website](https://reail-iitdelhi.github.io/temporalreasoning.github.io/)
 
 **Generating Open-World & Multi-Hierarchy Scene Graphs for Human-instructed Manipulation Tasks via Foundation Models** \
@@ -23,4 +23,4 @@ ICRA 2024: Physical Human-Robot Interaction Workshop \
 **Incorporating Foundation Model Priors in Modeling Novel Objects for Robot Instruction Following in Unstructured Environments**\
 Moksh Malhotra, <ins>Aman Tambi</ins>, Sandeep S. Zachariah, P. V. M. Rao and Rohan Paul\
 ICRA 2024: 3D Visual Representations for Robot Manipulation\
-[Paper](https://drive.google.com/file/d/1t74QiTsLHgbyp-nzZSS4nmyow1Ygsg9z/view), [Website](https://reail-iitdelhi.github.io/3DObjectModels.github.io/)
+[Paper](https://openreview.net/pdf?id=s86mu1ovz4), [Website](https://reail-iitdelhi.github.io/3DObjectModels.github.io/)
