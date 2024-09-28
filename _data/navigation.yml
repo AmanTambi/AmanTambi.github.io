@@ -5,9 +5,6 @@ main:
 
   - title: "Projects"
     url: /projects/
-  
-  - title: "Awards"
-    url: /awards/
 
   - title: "Publications"
     url: /publications/
