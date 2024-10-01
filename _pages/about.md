@@ -19,4 +19,4 @@ During college, I interned at several companies, including [Systemantics](https:
 
 Before pursuing engineering, I was an Air Force cadet at the prestigious National Defence Academy ([NDA](https://nda.nic.in/)) in Pune, having secured an All India Rank (AIR) of 7 in the entrance exam. Unfortunately, I had to leave NDA due to an injury incured during training.
 
-[Curriculum vitae](https://drive.google.com/file/d/1VqNzgFpE4Si0Mx2CE1U6jWv8E8UCciG5/view?usp=sharing)
+[Curriculum vitae](https://drive.google.com/file/d/1hEc4whFHsJLC9bsTvZS9tui2I1DVnAQ1/view?usp=sharing)
