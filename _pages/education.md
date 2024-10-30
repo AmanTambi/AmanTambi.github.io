@@ -15,7 +15,7 @@ Education
 * **Airforce Cadet** : December 2018 - July 2019 \
     *Electronics and Communicaion* \
     National Defence Academy ([NDA](https://nda.nic.in/))
-* **Bachelor of Technology (BTech)** : 2019 - 2023 \
+* **Bachelor of Technology (B.E.)** : 2019 - 2023 \
     *Manufacturing Engineering* \
     Birla Institute of Technology and Science ([BITS Pilani](https://www.bits-pilani.ac.in/pilani/)) \
     CGPA: 8.69/10

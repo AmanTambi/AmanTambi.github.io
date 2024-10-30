@@ -22,11 +22,7 @@ Teaching
 Mentorship
 ======
 
-Worked with 5 undergraduate students and a post doc as part of their internship/course project, related to robot skill development for the robotic manipulator. A few of the projects are :
-
-* **Static and Dynamic Gesture Instructed Robot Task Execution** : July 2024 - Present \
-    *Shubhangi Nema, Post Doc (IIT-Delhi)*\
-Gestures provide non-verbal cues that complement spoken instructions, enhancing the robot’s understanding of user intent. This work leverages multi-modal input fusion, combining visual data from an image frame, gesture signals, and natural language commands to enable robots to perform complex tasks. The Vision-Language Model (VLM) processes these inputs, identifying relevant objects and interpreting gestures within the context of the language command. This object detection serves as the foundation for generating robot actions through a policy that maps the current state and goal to specific movements. By incorporating human gestures and language into its decision-making process, the system allows for seamless human-robot collaboration, enhancing robot responsiveness and task execution in real-world environments.
+Worked with 5 undergraduate students as part of their internship/course project, related to robot skill development for the robotic manipulator. A few of the projects are :
 
 * **Human Modelling from RGBD Sensors for Robotic Applications** : May 2024 - July 2024 \
     *Tanveer Singh, Undergraduate Student (IIT-Ropar)*\
