@@ -28,7 +28,7 @@ Education
 
 Work experience
 ======
-* **Robotics Engineer**: January 2025 - June 2025
+* **Robotics Engineer**: January 2025 - June 2025 \
   *Addverb ([Website](https://addverb.com/)) ([Certificate](https://drive.google.com/file/d/1qC_RvgIGLoX2rI3WXnGblO0ZrSSlI8qT/view?usp=sharing))* \
   * Collaborated on development, implementation, and testing of model predictive control utilizing centroidal dynamics, resulting in stable quadruped locomotion at 0.5-1.0 m/sec on flat terrain.
   * Utilized Isaac Lab to simulate robotic environments and train deep reinforcement learning policies (PPO) using PyTorch, performing sim-to-real transfers of learned controls onto physical Trakr quadruped.
