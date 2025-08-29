@@ -12,7 +12,7 @@ redirect_from:
 
 Education
 ======
-* **Master of Science (M.S.) ** : 2027 \
+* **Master of Science (M.S.)** : 2027 \
     *Robotic Systems Development* \
     Carnegie Mellon University ([BITS Pilani](https://mrsd.ri.cmu.edu/)) \
 * **Bachelor of Technology (B.E.)** : 2023 \
