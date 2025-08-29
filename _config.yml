@@ -116,6 +116,11 @@ author:
   youtube          :
   wikipedia        :
 
+  links:
+    - label: "Resume"
+      icon: "fas fa-file-alt"
+      url: "/files/aman_tambi_resume.pdf"
+
 
 # Reading Files
 include:
