@@ -14,7 +14,7 @@ Education
 ======
 * **Master of Science (M.S.)** : 2027 \
     *Robotic Systems Development* \
-    Carnegie Mellon University ([BITS Pilani](https://mrsd.ri.cmu.edu/)) \
+    Carnegie Mellon University ([CMU](https://mrsd.ri.cmu.edu/)) \
 * **Bachelor of Technology (B.E.)** : 2023 \
     *Manufacturing Engineering* \
     Birla Institute of Technology and Science ([BITS Pilani](https://www.bits-pilani.ac.in/pilani/)) \
