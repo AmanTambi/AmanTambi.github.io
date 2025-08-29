@@ -84,7 +84,6 @@ author:
   avatar           : "website_dp.jpeg"
   bio              : "Robotics @ CMU"
   location         : "Pittsburgh, Pennsylvania"
-  resume           : "/files/aman_tambi_resume.pdf"
   employer         : 
   pubmed           : 
   googlescholar    : 
@@ -116,6 +115,11 @@ author:
   xing             :
   youtube          :
   wikipedia        :
+
+  links:
+    - label: "Resume"
+      icon: "fas fa-file-alt"
+      url: "/files/aman_tambi_resume.pdf"
 
 # Reading Files
 include:
