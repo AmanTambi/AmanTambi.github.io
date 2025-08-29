@@ -15,4 +15,6 @@ During my undergrad, I interned at several companies, including [Systemantics](h
 
 Before pursuing engineering, I was an Air Force cadet at the prestigious National Defence Academy ([NDA](https://nda.nic.in/)) in Pune, having secured an All India Rank (AIR) of 7 in the entrance exam. Unfortunately, I had to leave NDA due to an injury incured during training.
  
-Beyond research, I find joy in table tennis, volleyball and spending time outdoors.
+Beyond robotics, I find joy in table tennis, volleyball and spending time outdoors.
+
+[Resume](https://drive.google.com/file/d/11h4R_EAsrsYoMxW6hr__qWF-y0WDt04Y/view?usp=sharing)
