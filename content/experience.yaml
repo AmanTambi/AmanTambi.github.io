@@ -1,0 +1,30 @@
+- org: FieldAI
+  url: https://fieldai.com/
+  role: Robotics research intern, locomotion
+  location: Irvine, CA
+  period: May – Aug 2026
+  line: 'Terrain-aware walking for the Unitree A2: elevation mapping, teacher–student policies, hardware deployment.'
+- org: Addverb
+  url: https://addverb.com/
+  role: Robotics engineer
+  location: Noida, India
+  period: Jan – Jun 2025
+  line: MPC and RL walking controllers for a quadruped and a biped, transferred to hardware.
+- org: Indian Institute of Technology Delhi
+  url: https://home.iitd.ac.in/
+  role: Robotics researcher
+  location: Delhi, India
+  period: May 2023 – Dec 2024
+  line: Foundation-model perception and planning for assistive manipulators.
+- org: Miko Robotics
+  url: https://miko.ai/
+  role: Robotics intern
+  location: Mumbai, India
+  period: Jan – May 2023
+  line: Mechanism design and dynamics for a companion robot.
+- org: Systemantics
+  url: https://www.systemantics.com/
+  role: Robotics intern
+  location: Bengaluru, India
+  period: Jun – Sep 2022
+  line: Kinesthetic teaching, gripper design and MoveIt bring-up for a 6-DoF arm.

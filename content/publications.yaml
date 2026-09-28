@@ -1,0 +1,35 @@
+- title: 'G²TR: Generalized Grounded Temporal Reasoning for Robot Instruction Following by Combining Large Pre-trained Models'
+  authors: Riya Arora, Niveditha Narendranath, **Aman Tambi**, Sandeep S. Zachariah, Souvik Chakraborty, Rohan Paul
+  venue: arXiv
+  year: 2024
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2410.07494
+  - label: Project page
+    url: https://reail-iitdelhi.github.io/temporalreasoning.github.io/
+  - label: Code
+    url: https://github.com/Project-LPEA/embodied_temporal_reasoning
+  project: g2tr
+  short: 'G²TR: Generalized grounded temporal reasoning for robot instruction following'
+- title: Generating Open-World & Multi-Hierarchy Scene Graphs for Human-instructed Manipulation Tasks via Foundation Models
+  authors: '**Aman Tambi**, Sandeep S. Zachariah, Moksh Malhotra, P. V. M. Rao, Rohan Paul'
+  venue: ICRA 2024 workshop
+  year: 2024
+  links:
+  - label: Paper
+    url: https://openreview.net/pdf?id=IqRpVnq6mC
+  - label: Project page
+    url: https://reail-iitdelhi.github.io/scenegraph.github.io/
+  project: open-world-scene-graphs
+  short: Open-world, multi-hierarchy scene graphs for human-instructed manipulation
+- title: Incorporating Foundation Model Priors in Modeling Novel Objects for Robot Instruction Following in Unstructured Environments
+  authors: Moksh Malhotra, **Aman Tambi**, Sandeep S. Zachariah, P. V. M. Rao, Rohan Paul
+  venue: ICRA 2024 workshop
+  year: 2024
+  links:
+  - label: Paper
+    url: https://openreview.net/pdf?id=s86mu1ovz4
+  - label: Project page
+    url: https://reail-iitdelhi.github.io/3DObjectModels.github.io/
+  project: foundation-model-3d-object-models
+  short: Foundation-model priors for modelling novel objects in unstructured environments

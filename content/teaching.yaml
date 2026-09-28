@@ -1,0 +1,17 @@
+teaching:
+  - title: Mechanisms & Robotics (ME G511)
+    org: BITS Pilani
+    period: Aug – Dec 2022
+    detail: Developed and graded assignments on robot kinematics, dynamics and control with [Prof. Bijay Kumar Rout](https://www.bits-pilani.ac.in/pilani/teaching/?faculty=bijay-k-routphd).
+
+mentorship:
+  - title: Human modelling from RGB-D sensors for robotic applications
+    who: Tanveer Singh, undergraduate intern (IIT Ropar)
+    period: May – Jul 2024
+    detail: Detect, recognise and track people in a ROS pipeline (YOLO + SFace), localise the speaker with a ReSpeaker mic array, and feed the result into the robot's world model for voice-commanded tasks.
+    link: https://drive.google.com/file/d/1cOxQ_YaNejphPoZd9czq340CaRp3hRph/view?usp=sharing
+  - title: Semantic extraction from visual + 3D data for low-light robotics
+    who: Pushpendra Jain, undergraduate intern (IIT Ropar)
+    period: May – Jul 2024
+    detail: Segment object classes from ground-based point clouds and benchmark 3D segmentation models for low-light operation.
+    link: https://drive.google.com/file/d/1RjMg3org7P2hqeDd1RstbnUpBVgWAEyp/view?usp=sharing

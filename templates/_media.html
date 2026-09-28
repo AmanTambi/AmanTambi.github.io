@@ -1,0 +1,12 @@
+{# Renders a media object: {type: video|image|placeholder, src, poster, alt, label} #}
+{% macro media(m, controls=false) -%}
+{% if m.type == 'video' %}
+<video class="media" {% if controls %}controls preload="metadata"{% else %}data-autoplay muted loop playsinline preload="none"{% endif %}{% if m.poster %} poster="{{ m.poster }}"{% endif %}{% if m.alt %} aria-label="{{ m.alt }}"{% endif %}>
+  <source src="{{ m.src }}" type="video/mp4">
+</video>
+{% elif m.type == 'image' %}
+<img class="media" src="{{ m.src }}" alt="{{ m.alt or '' }}" loading="lazy" decoding="async">
+{% else %}
+<div class="media placeholder" role="img" aria-label="{{ m.label or 'Media coming soon' }}"><span>{{ m.label or 'Media coming soon' }}</span></div>
+{% endif %}
+{%- endmacro %}

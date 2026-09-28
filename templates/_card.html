@@ -1,0 +1,8 @@
+{% import "_media.html" as med %}
+{% macro card(p) -%}
+<a class="tile" href="{{ p.url }}"{% if not p.page %} target="_blank" rel="noopener"{% endif %}>
+  <div class="tile-media">{{ med.media(p.media) }}</div>
+  <h3>{{ p.title }}</h3>
+  <span class="meta">{{ p.org }} · {{ p.period }}</span>
+</a>
+{%- endmacro %}

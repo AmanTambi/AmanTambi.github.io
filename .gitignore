@@ -1,13 +1,14 @@
-# Ignore the contents of the _site directory and other cache directories
-_site/
-.sass-cache/
+site/
+__pycache__/
+.venv/
+.DS_Store
 
-# Ignore the directory for local files during development
-local/
+# Source material, not part of the site (colleague photos + internal names inside)
+fieldai_final_presentation/
 
-# Ignore the Gemfile that is generated
-Gemfile.lock
-
-# Ingore files created by npm
-node_modules
-package-lock.json
+# Local planning notes and drafts (not for the public repo)
+PLAN.md
+TODO.md
+RESEARCH.md
+content/drafts/
+_unused_media/

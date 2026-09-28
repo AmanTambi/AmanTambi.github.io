@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site.title }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ site.description }}{% endblock %}">
+<link rel="canonical" href="{{ site.base_url }}{{ page_url }}">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:url" content="{{ site.base_url }}{{ page_url }}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ site.base_url }}{{ site.og_image }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fafafa">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v={{ build_id }}">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav-row">
+    {% block brand %}<a class="brand" href="/">{{ site.name }}</a>{% endblock %}
+    <nav class="nav" aria-label="Primary">
+      {% for item in site.nav %}<a href="{{ item.url }}">{{ item.label }}</a>{% endfor %}
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap footer-row">
+    <a class="email u" href="mailto:{{ site.email }}">{{ site.email }}</a>
+    <span class="updated">Updated {{ site.updated }}</span>
+    <ul class="footer-links">
+      {% for l in site.links if l.label != 'Email' %}<li><a class="u" href="{{ l.url }}"{% if l.external %} target="_blank" rel="noopener"{% endif %}>{{ l.label }}</a></li>{% endfor %}
+    </ul>
+  </div>
+</footer>
+<script src="/js/main.js?v={{ build_id }}" defer></script>
+</body>
+</html>

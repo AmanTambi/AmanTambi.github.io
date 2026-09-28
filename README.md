@@ -1,31 +1,101 @@
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+# amantambi.github.io
 
-I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
+Personal website for Aman Tambi. Plain HTML/CSS built from Markdown and YAML by a
+~150-line Python script. No JavaScript toolchain, no theme to fight.
 
-### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
+## Edit content
 
-# Instructions
+Everything you would normally change lives in `content/`:
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+| File | What it holds |
+| --- | --- |
+| `content/site.yaml` | name, status line, tagline, intro paragraph, links, nav |
+| `content/projects/*.md` | one file per project (front matter + Markdown body) |
+| `content/experience.yaml` | jobs, newest first |
+| `content/publications.yaml` | papers, newest first |
+| `content/education.yaml` | degrees |
+| `content/teaching.yaml` | teaching and mentorship |
+| `content/about.md` | the "About" paragraphs |
+| `files/` | PDFs (resume) — served at `/files/…` |
+| `static/media/` | images and videos — served at `/media/…` |
 
-See more info at https://academicpages.github.io/
+### Project front matter
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
+```yaml
+---
+title: Perceptive Locomotion for the Unitree A2
+org: FieldAI
+role: Robotics Research Intern          # optional
+period: May – Aug 2026
+venue: ICRA 2025                        # optional
+order: 1                                # sort key; lower = earlier
+featured: true                          # true = card on the home page, false = "More work" list
+page: true                              # false = no page, link out instead (needs `link:`)
+summary: One or two sentences for the card.
+tags: [Legged locomotion, RL]
+highlights:                             # optional; first two show on the card, all on the page
+  - value: "80%"
+    label: fewer limb contacts vs. the blind baseline
+media:                                  # card thumbnail (16:9 works best)
+  type: video                           # video | image | placeholder
+  src: /media/a2/stairs.mp4
+  poster: /media/a2/stairs.jpg
+  alt: Unitree A2 climbing stairs
+hero:                                   # optional; page hero. Defaults to `media`.
+  type: video
+  src: /media/a2/stairs_full.mp4
+  poster: /media/a2/stairs_full.jpg
+  controls: true                        # show player controls instead of muted autoplay loop
+  caption: Optional caption.
+links:
+  - label: Paper
+    url: https://…
+---
 
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+## Markdown body starts here
+```
 
-# Changelog -- bugfixes and enhancements
+Figures in the body are plain HTML:
 
-There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
+```html
+<figure>
+<img src="/media/a2/map.jpg" alt="…" loading="lazy">
+<figcaption>Caption.</figcaption>
+</figure>
 
-To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+<figure>
+<video data-autoplay muted loop playsinline preload="metadata" poster="/media/a2/clip.jpg"><source src="/media/a2/clip.mp4" type="video/mp4"></video>
+<figcaption>Caption.</figcaption>
+</figure>
+```
+
+### Media guidelines
+
+- Card thumbnails and heroes are 16:9. Videos: H.264 MP4, 1280 px wide, no audio, under ~4 MB, 10–40 s.
+- `data-autoplay` videos play muted while on screen and pause when scrolled away.
+- Keep the whole repo under GitHub's 1 GB soft limit; big raw videos go on YouTube/Drive with a link.
+
+## Build and preview
+
+```bash
+pip install -r requirements.txt   # once
+python build.py --serve           # http://localhost:8000, rebuilds on every save
+python build.py                   # one-off build into site/
+```
+
+## Deploy
+
+Pushing to `main` (or `master`) runs `.github/workflows/deploy.yml`, which builds the
+site and publishes `site/` to GitHub Pages. One-time setup in the repo:
+**Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
+## Layout
+
+```
+build.py        the builder
+content/        what you edit
+templates/      Jinja2 HTML (base.html, index.html, project.html, work.html, 404.html, _*.html macros)
+static/         css/style.css, js/main.js, favicon.svg, media/
+files/          PDFs
+site/           output (git-ignored)
+```

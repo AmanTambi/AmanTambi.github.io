@@ -1,0 +1,55 @@
+name: Aman Tambi
+title: Aman Tambi · Robotics
+base_url: https://amantambi.github.io
+description: >-
+  Robotics engineer at Carnegie Mellon. Learned locomotion, manipulation and motion planning,
+  deployed on real robots at FieldAI, Addverb and IIT Delhi. Graduating May 2027.
+og_image: /media/og.png
+photo: /media/aman.jpg
+
+# Small line above the name. Recruiters read this first. Change it when your situation changes.
+status: ""
+
+# One-sentence positioning under the name.
+tagline: ""
+
+# Short intro paragraph (HTML allowed).
+hero_html: >-
+  I'm a master's student in robotics at Carnegie Mellon University. I'm interested in making learning-based
+  methods work on real robots: narrowing the sim-to-real gap, and post-training foundation policies such as
+  vision-language-action models with reinforcement learning so they adapt to specific tasks and transfer
+  more reliably to hardware. I graduate in May 2027 and I'm looking for a full-time role.
+
+location: Pittsburgh, PA
+updated: September 2026
+
+email: atambi@andrew.cmu.edu
+
+# First link is rendered as the primary button.
+links:
+  - label: CV
+    url: /files/aman_tambi_resume.pdf
+    icon: file
+    external: true
+    primary: true
+  - label: Email
+    url: mailto:atambi@andrew.cmu.edu
+    icon: mail
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/amantambi/
+    icon: linkedin
+    external: true
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=hUyhSeQAAAAJ
+    icon: scholar
+    external: true
+
+nav:
+  - label: Work
+    url: /#work
+  - label: Experience
+    url: /#experience
+  - label: About
+    url: /#about
+  - label: CV
+    url: /files/aman_tambi_resume.pdf

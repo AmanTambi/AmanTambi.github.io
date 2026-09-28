@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% import "_card.html" as c %}
+{% block title %}Work · {{ site.name }}{% endblock %}
+{% block content %}
+<section class="section wrap" style="border-top:0">
+  <header class="section-head"><h2>All projects</h2></header>
+  <div class="section-body">
+    <div class="tiles">
+      {% for p in projects if p.page %}{{ c.card(p) }}{% endfor %}
+    </div>
+    <div class="rows more">
+      {% for p in projects if not p.page %}
+      <div class="row">
+        <span class="when">{{ p.period }}</span>
+        <div>
+          <span class="org">{% if p.url %}<a class="u" href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</span>
+          <p class="line">{{ p.summary }}{% if p.result %} {{ p.result }}{% endif %}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

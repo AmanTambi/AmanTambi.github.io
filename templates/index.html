@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% import "_card.html" as c %}
+{% block brand %}{% endblock %}
+{% block content %}
+<section class="hero wrap">
+  <div class="hero-text">
+    <h1 class="hero-name">{{ site.name }}</h1>
+    {% if site.status %}<p class="hero-status">{{ site.status }}</p>{% endif %}
+    {% if site.tagline %}<p class="lede">{{ site.tagline }}</p>{% endif %}
+    <p class="hero-body">{{ site.hero_html|safe }}</p>
+    <ul class="hero-links">
+      {% for l in site.links %}<li><a class="u" href="{{ l.url }}"{% if l.external %} target="_blank" rel="noopener"{% endif %}>{{ l.label }}</a></li>{% endfor %}
+    </ul>
+  </div>
+  <figure class="hero-photo"><img src="{{ site.photo }}" alt="Portrait of {{ site.name }}" width="232" height="290"></figure>
+</section>
+
+<section id="work" class="section wrap">
+  <header class="section-head"><h2>Selected work</h2><a class="u" href="/work/">All projects</a></header>
+  <div class="section-body">
+    <div class="tiles">
+      {% for p in featured %}{{ c.card(p) }}{% endfor %}
+    </div>
+    {% if more %}
+    <div class="rows more">
+      {% for p in more[:3] %}
+      <div class="row">
+        <span class="when">{{ p.period }}</span>
+        <div>
+          <span class="org">{% if p.url %}<a class="u" href="{{ p.url }}"{% if not p.page %} target="_blank" rel="noopener"{% endif %}>{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</span>
+          <p class="line">{{ p.summary }}{% if p.result %} {{ p.result }}{% endif %}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<section id="experience" class="section wrap">
+  <header class="section-head"><h2>Experience</h2><a class="u" href="/files/aman_tambi_resume.pdf" target="_blank" rel="noopener">Full CV</a></header>
+  <div class="section-body rows">
+    {% for e in experience %}
+    <div class="row">
+      <span class="when">{{ e.period }}</span>
+      <div class="with-logo">
+        {% if e.logo %}<img class="logo" src="{{ e.logo }}" alt="" width="28" height="28">{% endif %}
+        <div>
+          <span class="org"><a class="u" href="{{ e.url }}" target="_blank" rel="noopener">{{ e.org }}</a></span> <span class="role">· {{ e.role }}</span>
+          <p class="line">{{ e.line|mdi|safe }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="publications" class="section wrap">
+  <header class="section-head"><h2>Publications</h2></header>
+  <div class="section-body rows">
+    {% for pub in publications %}
+    <div class="row pub">
+      <span class="when">{{ pub.year }}</span>
+      <div>
+        <p class="title"><a class="u" href="{{ pub.links[0].url }}" target="_blank" rel="noopener">{{ pub.short or pub.title }}</a></p>
+        <span class="venue">{{ pub.venue }}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="about" class="section wrap">
+  <header class="section-head"><h2>About</h2></header>
+  <div class="section-body about">
+    <div class="prose">{{ about_html|safe }}</div>
+    <aside class="aside">
+      <h3>Education</h3>
+      <ul>
+        {% for ed in education %}
+        <li><p class="org">{{ ed.school }}</p><p class="role">{{ ed.degree }}</p><span class="meta">{{ ed.period }}</span></li>
+        {% endfor %}
+      </ul>
+    </aside>
+  </div>
+</section>
+{% endblock %}
