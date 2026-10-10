@@ -99,3 +99,6 @@ static/         css/style.css, js/main.js, favicon.svg, media/
 files/          PDFs
 site/           output (git-ignored)
 ```
+
+A project's front matter may set `href: /some/path/` to link its tile to a standalone page (for example a site copied into
+`static/`) instead of rendering `/work/<slug>/`.

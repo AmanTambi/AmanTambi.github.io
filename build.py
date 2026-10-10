@@ -81,7 +81,8 @@ def load_projects() -> list[dict]:
         p.setdefault("highlights", [])
         p.setdefault("media", {"type": "placeholder"})
         p.setdefault("order", 999)
-        p["url"] = f"/work/{p['slug']}/" if p["page"] else (p.get("link") or "")
+        # `href`: the tile links to a page outside the template (e.g. a standalone project site under static/); no /work/<slug>/ page
+        p["url"] = p.get("href") or (f"/work/{p['slug']}/" if p["page"] else (p.get("link") or ""))
     projects.sort(key=lambda p: p["order"])
     return projects
 
@@ -137,7 +138,7 @@ def build(verbose: bool = True) -> None:
     render("index.html", OUT / "index.html", page_url="/")
     render("work.html", OUT / "work" / "index.html", page_url="/work/")
     render("404.html", OUT / "404.html", page_url="/404.html")
-    paged = [p for p in projects if p["page"]]
+    paged = [p for p in projects if p["page"] and not p.get("href")]
     for i, p in enumerate(paged):
         render(
             "project.html",
